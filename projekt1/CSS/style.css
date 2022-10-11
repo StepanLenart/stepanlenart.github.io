@@ -17,7 +17,7 @@
     color: White;
 }
 .text-secondary{
-    color: black;
+    color: saddlebrown;
 }
 .lead{
     font-size: 20px;
@@ -42,6 +42,11 @@ h1, h2, h3{
 }
 h5, h6{
     color: black;
+}
+h7{
+    float: right;
+    width: 550px;
+    min-height: 100%;
 }
 p{
     margin: 10px 0;
@@ -120,6 +125,7 @@ a{
 #showcase{
     background: url("../img/annie-spratt-dqpEg5lo9P0-unsplash.jpg") no-repeat center center/cover;
     height: 600px;
+}
 
 #showcase .showcase-content{
     color: white;
@@ -166,7 +172,6 @@ a{
 #home-info .info-img{
     float: left;
     width: 50%;
-    background: url("/obr");
 }
 
 
@@ -193,7 +198,7 @@ a{
 /*about*/
 #about-info .info-right{
     float: right;
-    width: 50%;
+    width: 600px;
     min-height: 100%;
 }
 
@@ -212,15 +217,16 @@ a{
 
 /*testimonials*/
 #testimonials{
-    height: 600px;
-    background: url("../") no-repeat center center/cover;
+    height: 200px;
+    background: url("../img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg") no-repeat center center/cover;
     padding-top: 100px;
 }
 
 #testimonials h2{
-    color: aliceblue;
+    color: white;
     text-align: center;
     padding-bottom: 40px;
+    font-size: 3em;
 }
 
 #testimonials .testimonials{
@@ -235,6 +241,8 @@ a{
     height: 120px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
     padding-bottom: 70px;
 }
 
