@@ -27,7 +27,7 @@
 /*mainstyling*/
 
 html,body{
-    font-family: "Segoe UI";
+    font-family: "Segoe UI",sans-serif;
     line-height: 1.7em;
 }
 
