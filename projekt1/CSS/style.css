@@ -53,12 +53,15 @@ a{
     margin: 10px 0;
     color: white;
 }
+i{
+    color: black;
+}
 #navbar{
     background: black;
 }
 
 #navbar a{
-    color: dimgrey;
+    color: white;
 }
 
 #navbar h1{
@@ -98,7 +101,7 @@ a{
 }
 
 .bg-primary{
-    background: #ffffff;
+    background: white;
     color: black;
 }
 
@@ -173,6 +176,7 @@ a{
 
 
 .box {
+    color: white;
     float: left;
     width: 33.3%;
     padding: 50px;
