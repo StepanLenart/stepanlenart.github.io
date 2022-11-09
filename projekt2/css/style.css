@@ -134,7 +134,7 @@ background-color: rgba(0,0,0,0);
     text-align: center;
     padding: 1rem;
 }
-#what .items .item{
+#what .items .item i {
     background: saddlebrown;
     padding: 1rem;
     border-radius: 50%;
