@@ -45,6 +45,7 @@ p{
     flex-wrap:wrap;
     justify-content: space-between;
     padding: 1rem;
+    z-index: 2;
 }
 #navbar ul{
     display: flex;
