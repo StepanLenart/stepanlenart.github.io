@@ -11,6 +11,27 @@ body{
     background: white;
     font-family: pacifico, cursive;
 }
+.bg-light{
+    background-color: #f4f4f4f4;
+    color: #333333;
+}
+.bg-dark{
+    background-color: #333333;
+    color: white;
+}
+.bg-dark2{
+    background-color: black;
+    color: white;
+}
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+    padding-left: 0.5rem;
+}
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #aaa dotted 1px;
+}
 .text-primary{
     color: saddlebrown;
 }
@@ -115,16 +136,38 @@ background-color: rgba(0,0,0,0);
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
 }
 .py-1{
     padding: 1.5rem 0;
 }
 .py-2{
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 .py-3{
-    padding: 3rem 0;
+    padding: 3.5rem 0;
 }
+
+.p-1{
+    padding: 1.5rem 0;
+}
+.p-2{
+    padding: 2.5rem 0;
+}
+.p-3{
+    padding: 3.5rem 0;
+}
+
+.m-1{
+    margin: 1.5rem 0;
+}
+.m-2{
+    margin: 2.5rem 0;
+}
+.m-3{
+    margin: 3.5rem 0;
+}
+
 /*Section co děláme*/
 #what .items{
     display: flex;
@@ -133,10 +176,20 @@ background-color: rgba(0,0,0,0);
 #what .item{
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 #what .items .item i {
     background: saddlebrown;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+#project {
+    display: flex;
+}
+#project .project-img{
+    background: url("https://images.unsplash.com/photo-1515283709260-ee29296f1534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80") no-repeat center center/cover;
+}
+#project div{
+    flex: 1;
 }
