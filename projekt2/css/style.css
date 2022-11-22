@@ -64,7 +64,8 @@ p{
     padding: 0.5rem;
     margin: 0 0.25rem;
 }
-#navbar ul li a:hover{
+#navbar ul li a:hover,
+.active {
     background-color: saddlebrown;
     border-radius: 4px;
 }
