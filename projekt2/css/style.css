@@ -228,3 +228,7 @@ background-color: rgba(0,0,0,0);
 #contact h3{
     margin-top: 2rem;
 }
+#main-footer{
+    display: flex;
+    height: 400px;
+}

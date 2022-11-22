@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="./css/style.css">
+    <link rel="stylesheet"
+          href="./css/widescreen.css" media="screen and(min width: 1100px)">
+    <link rel="stylesheet"
+          href="./css/mobile.css" media="screen and(max width: 768px)">
     <title>Coffee shop</title>
 </head>
 <body id="home">
@@ -162,11 +166,11 @@
         </ul>
         <h3>Email</h3>
         <ul class="list">
-            <li>email</li>
+            <li>Cof.shop@shop.com</li>
         </ul>
         <h3>Telefon</h3>
         <ul class="list">
-            <li>Telefon</li>
+            <li>504 124 892</li>
         </ul>
     </div>
 </section>
@@ -179,8 +183,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    // Smooth scrolling
+    window.addEventListener('scroll', function (){
+        if (window.scrollY > 150) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+            document.querySelector('#showcase .source').style.display = "none";
+        }
+        else {
+            document.querySelector('#navbar').style.opacity = 1;
+            document.querySelector('#showcase .source').style.display = "block";
+
+        }
+    })
+
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
             event.preventDefault();
@@ -194,26 +210,27 @@
     })
 
 
+
+    // Navigation active state on scroll
     var nav_sections = $('section');
     var main_nav = $('#navbar li, .mobile-nav');
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
 
         var cur_pos = $(this).scrollTop() + 200;
 
-        // Menu Opacity on scrolling and hidding source
+        console.log(cur_pos);
 
         if (cur_pos > 350) {
             document.querySelector('#navbar').style.opacity = 0.9;
             document.querySelector('#showcase .source').style.display = "none";
-        } else {
+        }
+        else {
             document.querySelector('#navbar').style.opacity = 1;
             document.querySelector('#showcase .source').style.display = "block";
         }
 
-        // Navigation active state on scroll
-
-        nav_sections.each(function () {
+        nav_sections.each(function() {
             var top = $(this).offset().top,
                 bottom = top + $(this).outerHeight();
 
@@ -228,7 +245,10 @@
                 $("#navbar ul li a").removeClass('active');
             }
         });
+
+
     });
+
 </script>
 </body>
 </html>
