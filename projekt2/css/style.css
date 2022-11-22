@@ -115,7 +115,10 @@ background-color: rgba(0,0,0,0);
 .btn-dark{
     background: black;
     color: white;
+    font-size: 1.7rem;
+    padding-left: 5px;
 }
+
 .source{
     font-size: small;
     position: absolute;
