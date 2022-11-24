@@ -25,6 +25,7 @@
 <nav id="navbar">
     <div id="logo"><span class="text-primary"><i class="fa-solid fa-mug-hot"></i></span><a href="index.html">Coffee
         <span class="text-primary">shop</span></a></div>
+    <a href="#" id="hambac"><i class="fa fa-bars 2x"></i></a>
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#what">O nás</a></li>
@@ -36,9 +37,6 @@
     <div class="showcase-content">
         <h1>Vítejte na našich stránkách</h1>
         <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, amet atque beatae corporis deserunt
-            dignissimos dolores facilis, itaque labore minus numquam officia placeat quaerat quidem repellat sapiente
-            tempore veritatis, voluptatibus.
         </p>
         <a href="#what" class="btn">Více informací</a>
     </div>
@@ -54,27 +52,21 @@
             <i class="fas fa-wifi fa-2x"></i>
             <div>
                 <h3>Free wifi</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid blanditiis cum deleniti
-                    distinctio ducimus eius hic illo in laboriosam neque, numquam pariatur placeat quibusdam quis
-                    reprehenderit rerum temporibus, voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi consectetur distinctio ipsam, laboriosam laudantium omnis quod sunt tempora tempore, veniam voluptas! Ex id natus quidem quisquam, temporibus ut vero!</p>
             </div>
         </div>
         <div class="item">
             <i class="fas fa-mug-hot fa-2x"></i>
             <div>
                 <h3>Káva</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid blanditiis cum deleniti
-                    distinctio ducimus eius hic illo in laboriosam neque, numquam pariatur placeat quibusdam quis
-                    reprehenderit rerum temporibus, voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos natus ut? Adipisci architecto, asperiores corporis delectus error eveniet, excepturi fugit illo impedit molestiae nesciunt odio provident quae quibusdam voluptate.</p>
             </div>
         </div>
         <div class="item">
             <i class="fas fa-cookie fa-2x"></i>
             <div>
                 <h3>Dezerty</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid blanditiis cum deleniti
-                    distinctio ducimus eius hic illo in laboriosam neque, numquam pariatur placeat quibusdam quis
-                    reprehenderit rerum temporibus, voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, esse facere mollitia nihil odit optio qui quibusdam quo unde? Assumenda earum fugiat nostrum perferendis vel. A autem dolores fuga quibusdam.</p>
             </div>
         </div>
     </div>
@@ -83,7 +75,7 @@
 <section id="project">
     <div class="project-img"></div>
     <div class="project-text bg-dark p-2">
-        <h2 class="m-heading">Projektový<span class="text-primary">tým</span></h2>
+        <h2 class="m-heading">Otevírací<span class="text-primary">doba</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum eligendi eum explicabo iste iusto
             molestias mollitia nemo pariatur perspiciatis, sit sunt vel voluptatem? Animi commodi delectus eos iusto
             rerum.</p>
@@ -182,15 +174,21 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-
-
+    $('#navbar #hambac').click(function (){
+        $('#navbar ul').slideToggle("slow")
+    });
+    if($(window).width()<501){
+    $('#navbar ul').click(function (){
+        $('#navbar ul').hide();
+    });
+    }
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
             event.preventDefault();
             const hash = this.hash;
             $('html, body').animate(
                 {
-                    scrollTop: $(hash).offset().top - 100
+                    scrollTop: $(hash).offset().top - 260
                 }, 800
             )
         }
@@ -208,14 +206,14 @@
 
 
 
-        if (cur_pos > 350) {
-            document.querySelector('#navbar').style.opacity = 0.9;
+        //if (cur_pos > 350) {
+            //document.querySelector('#navbar').style.opacity = 0.9;
             // document.querySelector('#showcase .source').style.display = "none";
-        }
-        else {
-            document.querySelector('#navbar').style.opacity = 1;
+        //}
+        //else {
+            //document.querySelector('#navbar').style.opacity = 1;
             // document.querySelector('#showcase .source').style.display = "block";
-        }
+       // }
 
         nav_sections.each(function() {
             var top = $(this).offset().top,
