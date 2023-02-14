@@ -5,7 +5,7 @@
     font-family: 'Product Sans', sans-serif;
 }
 
-#navbar {
+#nav-bar {
     display: flex;
     background-color: #61D2D5;
     justify-content: flex-end;
