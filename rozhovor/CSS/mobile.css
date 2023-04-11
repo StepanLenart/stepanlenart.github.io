@@ -1,30 +1,29 @@
-/* Mobile responsive CSS code */
-/* Set the font size for smaller screens */
+
 body {
     font-size: 14px;
 }
 
-/* Adjust the header font size for smaller screens */
+
 header h1 {
     font-size: 20px;
 }
 
-/* Adjust the section font size for smaller screens */
+
 section h3 {
     font-size: 18px;
 }
 
-/* Adjust the paragraph font size for smaller screens */
+
 section p {
     font-size: 16px;
 }
 
-/* Stack the sections vertically on smaller screens */
+
 section {
     margin-bottom: 20px;
 }
 
-/* Add padding to the main section for smaller screens */
+
 .main {
     padding: 10px;
 }
