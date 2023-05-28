@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgreen;
+    background-color: lightblue;
 }
 
 .project-tile {
@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
 
 #navbar {
     position: fixed;
@@ -42,6 +43,7 @@ body {
     padding-right: 15px;
     font-size: 1.3rem;
 }
+
 
 #nav-1 :hover {
     background: #FFFAF0;
